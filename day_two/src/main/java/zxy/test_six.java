@@ -43,16 +43,67 @@ public class test_six {
         }
 
         /**
-         * partition分区方法
+         * 快速排序partition分区方法
+         * 1.单侧指针移动
          */
-
-
         {
-
+            //以最后一个元素为基准
+            int low = 0;
+            int high = array.length - 1;
+            int pivot = array[high];
+            int i = low - 1;
+            for (int j = low; j < high; j++) {
+                if (array[j] < pivot) {
+                    i++;
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
 
         }
 
+        /**
+         * 快速排序partition分区方法
+         * 2.双侧指针移动
+         */
+        {
+            //模拟初始化的上下界
+            int low = 0;
+            int high = array.length - 1;
 
+            int pivot = array[low + (high - low) / 2];
+
+            //指针
+            int i = low - 1;
+            int j = high + 1;
+
+
+            //以相遇为跳出条件
+            while (true){
+                //将左指针向右移动，直到找到大于或等于基准点的元素
+                do{
+                    i++;
+                }while (array[i] < pivot);
+
+                // 将右指针向左移动，直到找到小于或等于基准点的元素
+                do {
+                    j--;
+                }while (array[j] > pivot);
+
+                // 确定分区点的下标
+                if(i >= j){
+                    // 分区点为j
+
+                    //return j;
+                }
+
+                //交换逆序对
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
     }
 
 }
