@@ -12,6 +12,8 @@
         <module>day_one</module>
         <module>day_two</module>
         <module>day_three</module>
+        <module>day_four</module>
+        <module>day_five</module>
     </modules>
 
     <properties>
