@@ -38,6 +38,7 @@ public class test_twoImp extends test_two {
     @Override
     void attack() {
         System.out.println(" attack");
+        System.out.println(testStatic());
     }
 
 

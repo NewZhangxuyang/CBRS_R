@@ -54,6 +54,8 @@ public interface test_five {
      * example:
      * interface_name.static_method_name()
      *
+     * 接口中的静态方法，不可被子类继承
+     *
      */
     public static void printStatic() {
         System.out.println("static method");

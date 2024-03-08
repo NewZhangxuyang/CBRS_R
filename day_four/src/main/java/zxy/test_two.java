@@ -71,8 +71,9 @@ public abstract class test_two {
     }
 
 
-    public static void testStatic() {
+    public static int testStatic() {
         System.out.println("testStatic");
+        return 1;
     }
 
 

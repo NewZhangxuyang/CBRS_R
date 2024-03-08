@@ -1,5 +1,6 @@
 package zxy;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 
@@ -11,5 +12,9 @@ import java.util.Map;
 public class test_examine {
     public static void main(String[] args) {
         Map map = Collections.EMPTY_MAP;
+
+
+        Collection map_value = map.values();
+        map_value.stream().forEach(System.out::println);
     }
 }
