@@ -17,14 +17,14 @@ import java.util.stream.Collectors;
  */
 public class test_list_linkedlist {
     /**
-     * arraylist和inkedlist的区别
-     * 1.底层数据结构不同--arraylist底层是数组，linkedlist底层是链表
-     * 2.插入和删除操作的效率区别--arraylist插入和删除操作效率低，linkedlist插入和删除操作效率高
-     * 3.查询操作的效率区别--arraylist查询效率高，linkedlist查询效率低
+     * arraylist和 Linked list的区别
+     * 1.底层数据结构不同--arraylist底层是数组，linked list底层是链表
+     * 2.插入和删除操作的效率区别--arraylist插入和删除操作效率低，linked list插入和删除操作效率高
+     * 3.查询操作的效率区别--arraylist查询效率高，linked list查询效率低
      *
      *
-     * arraylist底层是数组，有1.5倍的自动扩容机制
-     * linkedlist底层是链表
+     * arraylist底层是数组，有1.5倍的自动扩容机制,默认的容量是10
+     * linked list底层是链表
      *
      */
 

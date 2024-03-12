@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="day_eight" />
         <module name="day_two" />
         <module name="day_five" />
-        <module name="day_seven" />
         <module name="day_three" />
         <module name="day_six" />
+        <module name="day_seven" />
         <module name="day_four" />
       </profile>
     </annotationProcessing>

@@ -1,9 +1,6 @@
 package tomcat;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -45,9 +42,11 @@ public class server_work_thread implements Runnable {
                 String copy = bufferedReader.readLine();
                 System.out.println("收到客户端的消息：" + copy);
 
+
                 System.out.println("请输入内容");
                 String content = scanner.nextLine();
-                outputStream.write(content.getBytes("UTF-8"));
+                PrintWriter printWriter = new PrintWriter(outputStream, true);
+                printWriter.println(content);
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

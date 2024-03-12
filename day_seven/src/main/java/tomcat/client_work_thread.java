@@ -37,16 +37,19 @@ public class client_work_thread implements Runnable {
     public void run() {
         try {
             while (true) {
-                BufferedReader bufferedReader = new BufferedReader(
-                        new InputStreamReader(inputStream, "UTF-8"));
-                String content = bufferedReader.readLine();
-                System.out.println("收到服务端的消息：" + content);
                 System.out.println("请输入发送的内容");
                 String next = scanner.next();
                 if ("exit".equals(next)) {
                     break;
                 }
-                outputStream.write(next.getBytes("UTF-8"));
+                PrintWriter printWriter = new PrintWriter(outputStream,true);
+                printWriter.println(next);
+
+
+                BufferedReader bufferedReader = new BufferedReader(
+                        new InputStreamReader(inputStream, "UTF-8"));
+                String content = bufferedReader.readLine();
+                System.out.println("收到服务端的消息：" + content);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

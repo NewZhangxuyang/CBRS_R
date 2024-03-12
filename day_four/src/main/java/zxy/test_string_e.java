@@ -10,6 +10,9 @@ package zxy;
  * <p>
  * StringBuilder and  StringBuffer ，初始容量都是16，当超过16时，会自动扩容
  * 扩容的方式，原来的容量*2 + 2
+ *
+ *
+ *
  * <p>
  * 拼接方法是append
  * <p>

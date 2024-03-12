@@ -18,7 +18,6 @@ public class test_list_queue {
          * 常用的实现类有：ArrayDeque、LinkedList、PriorityQueue
          *
          * Deque 是一种双端队列
-         *
          * 当需要使用队列时也就首选ArrayDeque了
          * 次选是LinkedList
          */

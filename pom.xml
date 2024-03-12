@@ -16,6 +16,7 @@
         <module>day_five</module>
         <module>day_six</module>
         <module>day_seven</module>
+        <module>day_eight</module>
     </modules>
 
      <dependencies>

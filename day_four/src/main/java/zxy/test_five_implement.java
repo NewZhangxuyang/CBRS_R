@@ -18,5 +18,6 @@ public class test_five_implement implements test_five {
 
     public static void testImplementStatic() {
         test_five.printStatic();
+
     }
 }
