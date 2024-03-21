@@ -2,19 +2,33 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="day_eight" />
         <module name="day_two" />
         <module name="day_five" />
+        <module name="day_jdbc" />
+        <module name="spring_boot" />
+        <module name="day_spring" />
+        <module name="day_seven" />
+        <module name="day_nine" />
+        <module name="day_eight" />
         <module name="day_three" />
         <module name="day_six" />
-        <module name="day_seven" />
+        <module name="zxy" />
+        <module name="day_maven_git" />
+        <module name="mvc" />
         <module name="day_four" />
-        <module name="day_nine" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mvc" options="-parameters" />
+      <module name="spring_boot" options="-parameters" />
+      <module name="zxy" options="-parameters" />
+    </option>
   </component>
 </project>

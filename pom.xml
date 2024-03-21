@@ -18,6 +18,9 @@
         <module>day_seven</module>
         <module>day_eight</module>
         <module>day_nine</module>
+        <module>day_jdbc</module>
+        <module>day_ten</module>
+        <module>day_ten/day_spring</module>
     </modules>
 
      <dependencies>

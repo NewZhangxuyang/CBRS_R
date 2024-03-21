@@ -54,6 +54,9 @@ public class reflection_reflect {
         try {
             field = clazz.getDeclaredField("name");
             field.setAccessible(true);
+            /**
+             * 在调用 Field 类的 get() 方法时，因为静态变量是属于类而不是对象，所以第一个参数应该传递 null
+             */
         } catch (NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
